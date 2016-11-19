@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{gensymb}
+\title{Molecules and Cells HW 8}
+\date{October 20th, 2016}
+
+\newcommand{\makefig}[2]{
+\begin{figure}[h]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+
+\begin{document}
+\maketitle
+1a. ER. The signal  for the ER acts while the protein is being trnaslated while the signal for import into the nucleus acts after translation is over.
+
+1b. ER. Same reasoning as above: The ER signal acts during translation rather than after
+
+1c. Mitochondria. The retention signal would not work because the protein would never enter the ER to begin with, so the mitochondria signal would work.
+\vspace{5mm}
+
+2a. Yes, in ER. The protein will require post-processing in the Golgi apparatus to be placed in a vesicle, so it must be synthesized in the ER\\
+2b. Yes, on ER. For the proteins to travel to the extracellular space, it has to first be placed in a vesicle, so it is translated in the ER.\\
+2c. No, in cytosol. Protein is made by free ribosomes floating in the cytosol and moves to nucleus after being translated\\
+2d. Yes, the protein is synthesized on the membrane of a vesicle which then goes and binds to the plasma membrane.\\
+2e. Yes, on ER. Because the ER is attached to the nucleus, it is very easy for proteins produced here to enter the nuclear envelope.\\
+\vspace{5mm}
+
+3a. This can be accomplished by changing the ratio of products to reactants. The flow becomes more spontaneous as product is removed or as more reactants are added. For example, as oxaloacetate is produced, it could be shifted into a separate section where it could be used to react with more Acetyl CoA.
+
+3b. The overall $\delta G$ has to be at most 0, so
+$$\Delta G = 0=\Delta G^{\degree}+RTln(\frac{[NADH][OAA]}{[MAL][NAD^+]}$$
+which becomes
+$$\frac{[OAA]}{[MAL]}=\left(\frac{[NAD^+]}{[NADH]}\right)e^{\frac{-\delta G^{\degree}}{RT}}=9.8 * 10^{-5}, \frac{[MAL]}{[OAA]}>=1.02*10^4$$
+\vspace{5mm}
+
+4a. From the equation,
+$$Rate=\frac{Area}{Thickness}(D)(\Delta C)=(4*\pi*(1*10^{-5} m)^2)*3*10^{-10} \frac{m}{s} * (.005M-0M)$$
+$$*1000 \frac{L}{m^3}*6.022*10^{23} \frac{molecules}{mol}=1.135*10^6 molecules/s$$
+
+4b. We can use the Michaelis-Menton equation,
+$$Rate = \frac{V_{max}[Glucose]}{K_m+[Glucose]}*10^5=\frac{10^4*5mM}{1.5mM+5mM}*10^5=7.69*10^8 molecules/s$$
+This is about 700 times faster than part a.
+\vspace{5mm}
+
+5. $CO_2$ - diffuses the fastest because it is nonpolar and small\\
+$H_2O$ - polar, so slower than carbon dioxide, but still small\\
+$EtOH$ - Polar and small,but larger than water, so more difficult to diffuse\\
+$Glucose$ - Large, but nonpolar, so slower than the previous, but the fastest large molecule\\
+$Ca^{2+}$ - small charged molecule, so slower than glucose\\
+$RNA$ - Larger than calcium and charged, so slowest of all\\
+
+6a. \makefig{0.5}{P6.png}
+
+6b. Ethanol has the linear curve because it is small, so it can naturally diffuse across the membrane. Increasing the carbon source would linearly increase how quickly it diffuses. On the other hand, acetate is charged, so its transport needs to be mediated by an enzyme. As the carbon source increases, the enzyme would be saturated and the rate would reach $V_{max}$.
+
+6c. The $K_m$ for acetate is 1 mM and $V_{max}$ is about 200 $\mu mol/min$. Since ethanol does not need an enzyme, its $K_m$ and $V_{max}$ cannot be calculated.
+
+7a. F. They facilitate transport in both directions
+
+7b. T
+
+7c. T
+
+7d. F. A protein without a signal goes to the cytosol
+
+7e. T
+
+7f. T
+
+7g. T
+\vspace{5mm}
+ 
+8. E
+\vspace{5mm}
+
+9a. Glycolysis is an anaerobic process - it does not need oxygen. Glucose is oxidized, but not necessarily with oxygen. Cells grown anaerobically can still perform glycolysis.
+
+9b. Because ethanol is a product of fermentation, more ethanol would be made if the yeast grows anaerobically. Carbon dioxide, on the other hand, is oxidized from carbon, so more carbon dioxide is produced if the yeast grows aerobically.
+
+10. As is shown in the graph, the $K_m$ for GLUT4 stays the same, but the $V_{max}$ increases. Therefore, a possible mechanism is that insulin causes GLUT4 to migrate from internal membranes to the plasma membrane, increasing their effectiveness in moving glucose into cells 
+\vspace{5mm}
+
+11a. $H^+_{cytosol} \rightarrow H^+_{mitochondria}$
+
+$$\Delta G=\Delta G^{\degree} + 2.3nRTlog(\frac{[H^+]_f}{[H^+]_i})$$
+$$\Delta G^{\degree}=-nRTln(1)=0,\Delta G=2.3RT(pH_i-pH_f)=-2.3nRT\Delta pH$$
+
+11b. At standard conditions, $\Delta V^0=0$ since the concentration of proteins is the same on both sides. Therefore,
+$$\Delta G=nF\Delta V$$
+
+11c. Once again, at standard conditions, $\Delta p^0 =0$ because the concentrations are the same on both sides. Therefore,
+
+$$\Delta p = \frac{\Delta G}{nF}=\frac{nf\Delta V-2.3nRT\Delta pH}{nF}=\Delta V - \frac{2.3RT}{F}\Delta pH$$
+
+\end{document}

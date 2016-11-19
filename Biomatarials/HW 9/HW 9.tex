@@ -1,0 +1,86 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{booktabs}
+
+\title{Biomaterials HW 9}
+\author{Nikhil Menon}
+\date{November 17th, 2016}
+
+\newcommand{\makefig}[2]{
+\begin{figure}[h]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+
+\begin{document}
+
+\maketitle
+1. The equation for the second virial coefficient is
+$$A_2=\frac{\frac{1}{2}-\chi}{V_1\rho_2^2}$$
+where $V_1$ is the molar volume of the solvent, and $\rho_2$ is the density of polystyrene, which is 1.04 g/$cm^3$.
+
+The molar volume can be calculated using the density and molar mass, which are 1.33 $g/cm^3$ and 84.93 g/mol for dichloromethane and 0.77 $g/cm^3$ and 84.16 g/mol. Therefore, the molar volume of dichloromethane is 63.86 $cm^3/mol$ and the molar volume of cyclohexane is 109.3 $cm^3/mol$.
+
+Plugging these values into the equation gives $\chi=0.48$ for dichloromethane and $\chi=0.504$ Because the $\chi$ value for cyclohexane is greater than 0.5, and the $\chi$ value for dichloromethane is less than 0.5, cyclohexane is the better solvent.
+
+2. The Mark-Houwink-Sakurada equation is
+$$[\eta]=KM^a$$
+We can plug in the values for PS and find that
+$$[\eta]_{PS}=58.77 cm^3/g$$
+Because the two compounds had the same elution times, we can assume that they had the same viscosity as well. Then, plugging into the equation with the constants for PMMA gives
+$$M=1.9*10^5 g/mol$$
+
+3. We can obtain $K_{\theta}$ using the equation
+
+$$\frac{[\eta]}{M^{1/2}}=K_{\theta}+BM^{1/2}$$
+
+and plotting $\frac{[\eta]}{M^{1/2}}$ against $M^{1/2}$, shown below. The value for $K_{\theta}$ is the y-intercept of the line, which is 0.0574.
+\makefig{0.5}{P3.png}
+
+Then, we solve for $\alpha_n$ using the equation
+
+$$[\eta]=K_{\theta}\alpha^3_n M^{1/2}$$
+
+and find the values shown below
+\makefig{0.5}{P3b.png}
+
+The $\alpha_n$ values are directly proportional to the molecular weight; they increase as the molecular weight increases.
+
+4. For the next three parts, we can use the equation
+$$\Delta S_m = -k\left(\frac{\phi_A}{N_A}ln(\phi_A)+\frac{\phi_B}{N_B}ln(\phi_B)\right)$$
+Because there is always 100g of both materials, and the density of all materials is 1 $g/cm^3$, the total volume for each material is 100 $cm^3$, and volume fraction for all materials is $\frac{100}{100+100}=0.5$
+
+(a) Because both compounds are solutions, $N_A=N_B=1$, and 
+$$\Delta S_m = -k\phi_Aln(\phi_A)+\phi_B{N_B}ln(\phi_B)=9.57*10^{-24}\frac{J}{K}$$
+
+(b)In this case, $N_A=1$, and we need to calculate $N_B$ by finding the number of molecules of polystyrene in the solution which is
+$$N_B=100g/1.2*10^5gmol^{-1}*6.022*10^{23}=5.02*10^{20}$$
+Plugging this back into the original equation gives 
+$$\Delta S_m = -k\left(\phi_Aln(\phi_A)+\frac{\phi_B}{N_B}ln(\phi_B)\right)=4.78*10^{-24}\frac{J}{K}$$
+
+(c) In this case, we need to calculate both $N_A$ and $N_B$ using the method above, which gives
+$$N_A=N_B=6.022*10^{20}$$
+Plugging these values back into the original equation gives $\Delta S = 1.59*10^{-44}$
+
+The values above show that it is significantly less entropically favorable to mix two polymers than a polymer and a solvent or 2 solvents. This makes sense because the solvent can fill in the gaps in the lattice where the polymer isn't, but another polymer would be unlikely to do so.
+
+5. The bond length for a C-C bond is 0.154 nm. Disregarding end groups, there are about 
+$$\frac{1.4*10^5 g/mol}{14 g/mol} = 1*10^4$$
+molecules of carbon, which is about $1*10^4$ bonds. The bond angle for polyethylene is $109.5\deg$, so $\theta = 180-109.5=70.5 \deg$
+
+By the freely jointed model,
+$$<R>^2=nl^2=1*10^4*(0.154 nm)^2=237 nm, <R> = 15.4 nm$$
+
+By the freely rotating model
+$$<R>^2=nl^2\frac{1+cos(\theta)}{1-cos(\theta)}=474.8 nm, <R>=21.8 nm$$
+
+For a fully extended chain,
+$$<R>=nlcos(\theta/2)=1258 nm$$
+
+It makes sense that the rotational and jointed models would have a significantly shorter length because the polymer bends back on itself. Additionally, the rotational model takes into account that bonds cannot directly overlap, so it would give a slightly larger value than the jointed model. Out of these three models, the freely rotating model is the most accurate.
+\end{document}
