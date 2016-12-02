@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.21)  22 NOV 2016 21:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.21)  28 NOV 2016 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,25 +581,55 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+<P3.png, id=1, 481.8pt x 95.6072pt>
+File: P3.png Graphic file (type png)
+ <use P3.png>
+Package pdftex.def Info: P3.png used on input line 27.
+(pdftex.def)             Requested size: 433.61598pt x 86.04567pt.
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./HW 6.aux) ) 
+<P5.png, id=3, 447.17062pt x 278.54062pt>
+File: P5.png Graphic file (type png)
+ <use P5.png>
+Package pdftex.def Info: P5.png used on input line 33.
+(pdftex.def)             Requested size: 402.44983pt x 250.68423pt.
+ [1
+
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./P3.png> <./P5
+.png>]
+<P7.png, id=14, 480.29437pt x 91.09032pt>
+File: P7.png Graphic file (type png)
+ <use P7.png>
+Package pdftex.def Info: P7.png used on input line 43.
+(pdftex.def)             Requested size: 384.23601pt x 72.87233pt.
+
+<P8.png, id=15, 486.31688pt x 94.85437pt>
+File: P8.png Graphic file (type png)
+ <use P8.png>
+Package pdftex.def Info: P8.png used on input line 49.
+(pdftex.def)             Requested size: 389.05403pt x 75.88358pt.
+
+<P8b.png, id=16, 478.03593pt x 93.34875pt>
+File: P8b.png Graphic file (type png)
+ <use P8b.png>
+Package pdftex.def Info: P8b.png used on input line 53.
+(pdftex.def)             Requested size: 382.42926pt x 74.6791pt.
+ [2 <./P7.png> <./P8.png> <./P8b.png>] (./HW 6.aux) ) 
 Here is how much of TeX's memory you used:
- 2924 strings out of 493013
- 37980 string characters out of 6137007
- 109118 words of memory out of 5000000
- 6432 multiletter control sequences out of 15000+600000
+ 2950 strings out of 493013
+ 38234 string characters out of 6137007
+ 110119 words of memory out of 5000000
+ 6452 multiletter control sequences out of 15000+600000
  7349 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,32p,452b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-<
-c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "HW 6.pdf" (1 page, 43176 bytes).
+ 40i,7n,32p,452b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb>
+Output written on "HW 6.pdf" (2 pages, 75174 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
