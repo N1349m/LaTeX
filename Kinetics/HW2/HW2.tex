@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\title{Physical Chemistry HW 2}
+\author{Nikhil Menon}
+\date{February 20,2017}
+
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+\item  
+A. There is an A-rich phase with the composition $A_{0.8}B_{0.2}$ and a B-rich phase with composition $A_{0.2}B_{0.8}$
+
+B. At a concentration of 0.2 for A, there is 100\% B-rich phase and 0\% A-rich phase. As the composition of A increases up to 0.8, the percent shifts linearly to a 100\% A-rich phase composition. Thus
+$$\% A phase = \frac{0.6-0.2}{0.8-0.2}=66\%$$
+$$\% B phase = 1 - \% A phase =33\%$$
+
+C. Using the Lever rule, we can see that the Gibb's free energy at any time is
+proportionate to where the mol fraction lies between the two phases. In this case,
+$$g=\mu_A+0.66*(\mu_B-\mu_A)=0.8-0.66(-1.2-(-0.8))=-1.06 eV$$
+
+D. It is impossible to create a mixture of the two phases that contain a concentration of either mixture greater than 0.8. For example, if we wanted to create a mixture with a concentration of A=0.9, we obviously would maximize the amount of A-rich phase. 
+$$x*0.8+(1-x)*0.2=0.9$$
+This gives a solution that is greater than 1, indicating that the system cannot exist. The same applies for mol fractions less than 0.2
+
+\item 
+By definition,
+$$\frac{d\Delta G_{mix}}{dx_A}=0$$
+We also know that
+$$\Delta G_{mix}=G_{mixed}-G_{unmixed}$$
+Since G at any states is just the weighted average of the chemical potentials, and the chemical potential of the substances when they are unmixed is the same as the pure substances, this equation becomes
+$$\Delta G_mix=\mu_Ax_A+\mu_Bx_B-g_Ax_A-g_Bx_B$$
+Substituting $x_B=1-x_A$ gives 
+$$\Delta G_mix=\mu_Ax_A+\mu_B(1-x_A)-g_Ax_A-g_B(1-x_A)$$
+Taking the derivative gives
+$$\frac{d\Delta G_{mix}}{dx_A}=\mu_A-\mu_B-g_A+g_B=0$$
+Finally, solving for $\mu_B$ gives
+$$\mu_B=\mu_A-g_A+g_B=-2.1 eV$$
+
+\item 
+A. Assuming that the solution is regular, the chemical potential of pure Al would be
+$$\mu_A=g_A$$
+Then, we can substitute this in for the chemical potential in the solution
+$$\mu_A=g_A-1.49=g_A+k_BTln(x_A*\gamma_A)$$
+which becomes
+$$-1.49=k_BTln(x_A*\gamma_A)$$
+Solving for $x_A$ gives
+$$x_A=\frac{e^{\frac{-1.49}{k_BT}}}{\gamma_A}=0.0309$$
+Thus, $x=1-x_A=0.9691$.
+
+B. Negative. The only difference between the ideal solution model and the regular solution model is the coefficient of activity. Since it is a very small term, $ln(\gamma_A)$ would be negative, so the overall Gibb's free energy would also be more negative. Thus, the enthalpy has to be negative.
+\end{enumerate}
+\end{document}
