@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\title{Physical Chemistry HW 4}
+\author{Nikhil Menon}
+\date{March 6,2017}
+
+\newcommand{\makefig}[2]{
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+
+\newcommand{\ang}{\mbox{\AA}}
+
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+\item
+
+a. We can model the movement of the interstitial atom as a two-dimensional random walk. Using the equation for mean-square distance
+$$\left<x^2\right>=(2d)\Gamma_{hop}t\alpha^2$$
+Substituting in the given values gives
+$$\left<x^2\right>=2dt\alpha^2(v_ie^{\frac{-(G_{A*}-G_{A})}{kT}})=2.05*10^7 \ang$$
+Finally, the total distance traveled is
+$$x=\sqrt{2.05*10^7 A} = 4547 \ang$$
+
+b. Here, we use a 1-dimensional random walk with the same formula as above
+$$\left<x^2\right>=2dt\alpha^2(v_ie^{\frac{-(G_{A*}-G_{A})}{kT}})=4492 \ang$$
+The total distance traveled is
+$$x=\sqrt{4492 \ang}=67.02 \ang$$
+
+c. We can estimate the distance using Pythagorean theorem
+$$d=\sqrt{67.02^2+4547^2}=4468.5 \ang$$
+
+d. This is exactly what we expected. The distance should be slightly longer since the particle is able to diffuse in 3 dimensions, but no too much higher since the activation energy in the z direction is greater.
+
+e. Using the given correlation factor, the new equation is
+$$\left<x^2\right>=2fx_idt\alpha^2(v_ie^{\frac{-(G_{A*}-G_{A})}{kT}}) = 2878 \ang$$
+The answer has decreased, which makes sense since now some portion of previously successful jumps are unsuccessful.
+
+\item
+
+a. Based on Vineyard's model,
+$$\Gamma=ve^{\frac{-\Delta G_{A^*}}{kT}}$$
+For the first,
+$$\Gamma_1=8*10^12*e^{\frac{-0.34}{8.617*10^5*300 K}}=1.55*10^7 Hz$$
+For the second,
+$$\Gamma_2=8.57*10^7 Hz$$
+From these values, we can calculate the mean square speed
+$$\frac{\left<x^2\right>}{t}=2d\Gamma\alpha^2$$
+For the first conductor,
+$$\frac{\left<x^2\right>}{t}=2*3*1.55*10^7 Hz*(4.2 \ang)^2=1.64*10^9 \frac{\ang}{s}$$
+For the second,
+$$\frac{\left<x^2\right>}{t}=4.94*10^9 \frac{\ang}{s}$$
+Thus, ions conduct faster in the second conductor.
+
+b. Because diffusion in these materials is modeled with Vineyard's model, the vibrational frequency should not change with temperature.
+
+c. At 600 K, the new jump frequencies are
+$$\Gamma_1=1.11*10^{10} Hz$$
+$$\Gamma_2=1.31*10^{10} Hz$$
+Plugging these values into the formula for mean square speed gives
+$$\frac{\left<x^2\right>}{t}=1.18*10^{12}  \frac{\ang}{s}$$
+for the first conductor and
+$$\frac{\left<x^2\right>}{t}=7.55*10^{11}  \frac{\ang}{s}$$
+Thus, the first conductor now conducts lithium ions more quickly.
+
+d. We can set up the equation
+$$2dv_1e^{\frac{-\Delta G_{A^*_1}}{kT}}\alpha_1^2=2dv_2e^{\frac{-\Delta G_{A^*_2}}{kT}}\alpha_2^2$$
+which simplifies to become
+$$v_1e^{\frac{-\Delta G_{A^*_1}}{kT}}\alpha_1^2=v_2e^{\frac{-\Delta G_{A^*_2}}{kT}}\alpha_2^2$$
+
+Solving for T gives
+$$T=465.7 K$$
+
+e. Setting the two new expressions for speed equal to each other gives
+$$\alpha_A*\frac{k_b*T}{h}*e^{\frac{-\Delta_{A^*}}{k_bT}}=\alpha_B*\frac{k_b*T}{h}*e^{\frac{-\Delta_{A^*}}{k_bT}}\rightarrow\alpha_A*e^{\frac{-\Delta_{A^*}}{k_bT}}=\alpha_B*e^{\frac{-\Delta_{A^*}}{k_bT}}$$
+Solving for T gives
+$$T=1511.2 K$$
+This answer is significantly higher than the answer for part d.
+\end{enumerate}
+\end{document}https://www.wolframalpha.com/

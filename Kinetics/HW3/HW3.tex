@@ -11,18 +11,26 @@
 \author{Nikhil Menon}
 \date{February 27,2017}
 
+\newcommand{\makefig}[2]{
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+
 \begin{document}
 
 \maketitle
 \begin{enumerate}
 \item  
-a. The equilibrium constant $K$ is equal to
-$$\frac{k_1}{k_2}=\frac{[B][C]}{[A]}=\frac{1}{2}$$
-We also know that 1 mol of A becomes 1 mol of A becomes 1 mol of B and 1 mol of C. If the amount of mol B at equilibrium is $x$,
-$$\frac{1}{2}=\frac{x^2}{1-x}$$
-Solving for x gives
-$$x=0.5$$
-Thus, at equilibrium, there would be 0.5 mol of A.
+
+a. The rate equation here is
+$$\frac{d[A]}{dt}=-k_1[A]+k_2[B][C]$$
+which has to equal 0 at equilibrium. We also know that $[A]+[B]=1$ and $[B]=[C]$.
+Substituting this in gives
+$$0=-2k_2[A]-k_2(1-[A])^2\rightarrow 2[A]=(1-[A])^2$$
+Solving this for $[A]$ gives
+$$[A]=0.26 M$$
 
 b. The decomposition of D creates B, which is a product in the decomposition of A. Thus, when D is added, the amount of A increases and the amount of C decreases.
 
@@ -32,5 +40,46 @@ which equals 0 at equilibrium. Thus,
 $$0=k_2[B][C]-k_1[A]+k_4[B][E]-k_3[D]$$
 Solving for [B] gives
 $$[B]=\frac{k_1[A]+k_3[D]}{k_2[C]+k_4[E]}$$
+
+\item
+The number of edge sites in the nanoparticle is
+$$12N-16$$
+and the number of face sites is 
+$$6(N-2)^2$$
+We also can express the total fraction of occupied sites as
+$$\theta = x_{face}\theta_{face}+x_{edge}\theta_{edge}$$
+where $x_{face}$ and $x_{edge}$ represent the probabilities of a space being a face or an edge, respectively.
+
+We also know that
+$$K_1=\frac{k_{adsorption}}{k_{desorption}},K_1*k_{desorption}=k_{adsorption}$$
+for the edge sites, and
+$$K_2=\frac{k_{adsorption}}{k_{desorption}},K_1*k_{desorption}=k_{adsorption}$$
+
+First, we can solve for the respective probabilities
+$$x_{face}=\frac{N_{face}}{N_{total}}=\frac{6(N-2)^2}{6(N-2)^2+12N-16}=\frac{3N^2-12N+12}{3N^2-6N+4}$$
+$$x_{edge}=\frac{N_{edge}}{N_{total}}=\frac{12N-16}{6(N-2)^2+12N-16}=\frac{6N-8}{3N^2-6N+4}$$
+
+Then, to find the two $\theta$ values, we can apply the langmuir equilibrium expression
+$$\theta=\frac{k_{adsorption}C_M}{k_{desorption}+k_{adsorption}C_M}$$
+Substituting in the previous expression with $K_1$ gives
+$$\theta_{edge}=\frac{K_1k_{desorption}C_M}{k_{desorption}+K_1k_{desorption}C_M}=\frac{K_1C_{CO}}{1+K_1C_{CO}}$$
+We can derive a similar expression for $\theta_{face}$
+$$\theta_{face}=\frac{K_2C_{CO}}{1+K_2C_{CO}}$$
+Finally, combining everything gives
+$$\theta =\frac{K_1C_{CO}}{1+K_1C_{CO}}*\frac{6N-8}{3N^2-6N+4}+\frac{K_2C_{CO}}{1+K_2C_{CO}}*\frac{3N^2-12N+12}{3N^2-6N+4}$$
+
+\item
+\makefig{0.6}{P3.png}
+
+\item
+The rate equation here is
+$$\frac{d[A]}{dt}=-k[A][C]$$
+Solving the differential equation gives
+$$[A]=[A]_0e^{-k[C]t}$$
+At t=5, this becomes
+$$[A]=e^{-0.1*5*2}=e^{-1}=0.367$$
+Thus, the concentration of B would be
+$$[B]=1-[A]=0.632$$
+
 \end{enumerate}
 \end{document}
